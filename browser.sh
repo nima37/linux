@@ -31,8 +31,8 @@ install_chromium() {
             -e CUSTOM_USER=$USERNAME \
             -e PASSWORD=$PASSWORD \
             -e CHROME_CLI=https://www.youtube.com/@IR_TECH/ `#optional` \
-            -p 11000:11000 \
-            -p 11001:11001 \
+            -p 11000:3000 \
+            -p 11001:3001 \
             -v /root/chromium/config:/config \
             --shm-size="1gb" \
             --restart unless-stopped \
